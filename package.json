@@ -7,8 +7,16 @@
     "test": "mocha --compilers js:babel-core/register",
     "build": "babel ./libs -d ./dist"
   },
-  "author": "",
+  "author": "li-qiang",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/li-qiang/node-uniq.git"
+  },
+  "homepage": "https://github.com/li-qiang/node-uniq#readme",
+  "keywords": [
+    "uniq"
+  ],
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
