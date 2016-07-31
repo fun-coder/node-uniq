@@ -1,6 +1,6 @@
 {
   "name": "node-uniq",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Remove repeatable item for an array",
   "main": "dist/index.js",
   "scripts": {
