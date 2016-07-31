@@ -1,11 +1,11 @@
 {
   "name": "node-uniq",
-  "version": "0.1.1",
+  "version": "0.1.5",
   "description": "Remove repeatable item for an array",
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "build": "babel ./libs -d ./dist"
+    "build": "babel ./libs -d ./dist && uglifyjs ./dist/index.js -o ./dist/index.js -mt  -c"
   },
   "author": "li-qiang",
   "license": "ISC",
@@ -22,6 +22,7 @@
     "babel-core": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
     "chai": "^3.5.0",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "uglifyjs": "^2.4.10"
   }
 }

@@ -3,7 +3,7 @@
 Remove repeatable item for an array
 
 
-[![Build Status](https://travis-ci.org/li-qiang/node-uniq.svg?branch=master)](https://travis-ci.org/li-qiang/node-uniq)
+[![Build Status](https://travis-ci.org/fun-coder/node-uniq.svg?branch=master)](https://travis-ci.org/fun-coder/node-uniq)
 
 
 ### Install
