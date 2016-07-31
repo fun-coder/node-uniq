@@ -1,5 +1,5 @@
 'use strict';
-import uniq from '../index';
+import uniq from '../dist/index';
 import {expect} from 'chai';
 
 describe('Uniq', () => {
