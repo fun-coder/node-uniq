@@ -1,6 +1,6 @@
 ## Node Uniq
 
-Remove repeatable item for an array
+Remove repeatable item for an array (size: **198B**)
 
 
 [![Build Status](https://travis-ci.org/fun-coder/node-uniq.svg?branch=master)](https://travis-ci.org/fun-coder/node-uniq)

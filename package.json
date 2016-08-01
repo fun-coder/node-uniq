@@ -1,7 +1,7 @@
 {
   "name": "node-uniq",
-  "version": "0.1.5",
-  "description": "Remove repeatable item for an array",
+  "version": "0.1.6",
+  "description": "Remove repeatable item for an array(size: 198B)",
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
