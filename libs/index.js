@@ -1,13 +1,16 @@
-'use strict';
+function defaultFn(i) {
+  return i;
+}
 
-export default (target, fn = i => i) => {
-  let map = {};
+module.exports = function (target, fn) {
+  fn = fn || defaultFn;
+  var map = {};
 
-  return target.filter((item) => {
-    let key = fn(item), type = typeof(key);
+  return target.filter(function (item) {
+    var key = fn(item), type = typeof key;
     map[type] = map[type] || {};
     if (map[type].hasOwnProperty(key)) return false;
     map[type][key] = item;
     return true;
   });
-}
+};

@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "build": "babel ./libs -d ./dist && uglifyjs ./dist/index.js -o ./dist/index.js -mt  -c"
+    "build": "uglifyjs ./libs/index.js -o ./dist/index.js -mt  -c"
   },
   "author": "li-qiang",
   "license": "ISC",
