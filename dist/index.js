@@ -1,1 +1,1 @@
-function defaultFn(n){return n}module.exports=function(n,r){r=r||defaultFn;var t={};return n.filter(function(n){var e=r(n),u=typeof e;return t[u]=t[u]||{},t[u].hasOwnProperty(e)?!1:(t[u][e]=n,!0)})};
+function defaultFn(n){return n}module.exports=function(n,e){e=e||defaultFn;for(var t=new Map,r=-1,u=0,a=[];++r<n.length;){var f=e(n[r]);t.has(f)||(t.set(f,""),a[u++]=n[r])}return a};

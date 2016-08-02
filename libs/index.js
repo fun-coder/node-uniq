@@ -4,13 +4,13 @@ function defaultFn(i) {
 
 module.exports = function (target, fn) {
   fn = fn || defaultFn;
-  var map = {};
-
-  return target.filter(function (item) {
-    var key = fn(item), type = typeof key;
-    map[type] = map[type] || {};
-    if (map[type].hasOwnProperty(key)) return false;
-    map[type][key] = item;
-    return true;
-  });
+  var map = new Map(), index = -1, resultIndex = 0, result = [];
+  while (++index < target.length) {
+    var key = fn(target[index]);
+    if (map.has(key)) continue;
+    map.set(key, '');
+    result[resultIndex++] = target[index];
+  }
+  return result;
 };
+
